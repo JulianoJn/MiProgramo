@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:projeto1/checkbox.dart';
 
 // tela lista 
 
@@ -10,8 +11,7 @@ class Lista extends StatelessWidget {
   Widget build(BuildContext context) {
     // padding de 24 px entre as bordas
     return Padding(padding: EdgeInsetsGeometry.all(24),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: ListView(
         children: [
           Text(
             'Hoje',
@@ -23,7 +23,14 @@ class Lista extends StatelessWidget {
 
           SizedBox(height: 16), // espaço entre o texto
           
-          Text('Tarefa'),
+          Row(
+  
+            children: [
+              CheckboxWidget(), 
+              SizedBox(width: 8), // espaço entre o checkbox e o texto
+              Text('Tarefa'),
+            ],
+          ),
           Text('Tarefa'),
           Text('Tarefa'),
           Text('Tarefa'),

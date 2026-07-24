@@ -31,8 +31,8 @@ class BarraSuperior extends StatelessWidget
             child:Text(
               "Suas Tarefas", 
                 style: 
-                  TextStyle(fontSize: 28, 
-                  fontWeight: FontWeight.bold ),
+                  TextStyle(fontSize: 30, 
+                  fontWeight: FontWeight.w900 ),
             )
             
             ),
